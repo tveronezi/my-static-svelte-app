@@ -2,10 +2,10 @@
 	export const prerender = true;
 </script>
 
-<section>
-	<a href="/a">a</a>
-	<a href="/b">b</a>
-	<a href="/c">c</a>
-	<a href="/d">d</a>
-	<a href="/e">e</a>
+<section class="flex flex-col p-4 text-lg">
+	<a class="underline" href="/a">a</a>
+	<a class="underline" href="/b">b</a>
+	<a class="underline" href="/c">c</a>
+	<a class="underline" href="/d">d</a>
+	<a class="underline" href="/e">e</a>
 </section>
