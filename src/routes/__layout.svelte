@@ -1,20 +1,14 @@
-<script context="module">
-	export const headerHeight = 44;
-	export const navHeight = 20;
-</script>
-
 <script lang="ts">
 	import '$lib/app.css';
+	const links = ['a', 'b', 'c', 'd', 'e']
 </script>
 
 <section class="h-screen flex flex-col">
-	<header class="bg-blue-800 h-{headerHeight}">header</header>
-	<nav class="p-4 text-lg bg-yellow-800 h-{navHeight}">
-		<a class="underline" href="/a">a</a>
-		<a class="underline" href="/b">b</a>
-		<a class="underline" href="/c">c</a>
-		<a class="underline" href="/d">d</a>
-		<a class="underline" href="/e">e</a>
+	<header class="bg-blue-800 h-44">header</header>
+	<nav class="p-4 text-lg bg-yellow-800 h-36 space-x-4">
+		{#each links as link}
+			<a class="underline" href="/{link}">{link}</a>
+		{/each}
 	</nav>
 	<main class="grow overflow-auto">
 		<slot />
