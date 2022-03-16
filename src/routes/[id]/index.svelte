@@ -2,4 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<span>{$page.params.id}</span>
+<div class="grid place-content-center bg-gray-300 h-full">
+	<span>page {$page.params.id}</span>
+	<a href="/">home</a>
+</div>

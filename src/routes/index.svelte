@@ -2,10 +2,13 @@
 	export const prerender = true;
 </script>
 
-<section class="flex flex-col p-4 text-lg">
-	<a class="underline" href="/a">a</a>
-	<a class="underline" href="/b">b</a>
-	<a class="underline" href="/c">c</a>
-	<a class="underline" href="/d">d</a>
-	<a class="underline" href="/e">e</a>
-</section>
+<script lang="ts">
+	let count = 0;
+</script>
+
+<div class="grid place-content-center text-center bg-gray-700 h-full space-y-16">
+	<span>index!</span>
+	<button class="p-4 bg-black text-white text-2xl w-32 rounded-lg" on:click={() => count++}
+		>{count}</button
+	>
+</div>
